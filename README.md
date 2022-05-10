@@ -30,21 +30,25 @@ The folder `algorithm` contains all the code we used.
 
  `CompTuner.py` is our proposed  **CompTuner** algorithm.
 
+We add a README file in the `algorithm` folder to help you understand and run the programs.
+
 ## Result
 
 The folder `results` contains all the results of (speedup and time consumption for five techniques).
+
+We add a README file in the `result` folder to help you understand the source data and result data for our expriments.
 
 ## Run
 
 - In order to tune `gcc`'s optimization for program `benchmarks/cbench/automotive_bitcount`, execute the following command:
 
 ```
-python3 main.py --bin-path (your gcc location) --driver (your gcc driver) --linker (your gcc linker) --src-dir 'benchmarks/cbench/automotive_bitcount' --execute-params 20
+python3 runCompTuner.py --bin-path (your gcc location) --driver (your gcc driver) --linker (your gcc linker) --src-dir 'benchmarks/cbench/automotive_bitcount' --execute-params 20
 ```
 
 - In order to tune `llvm`'s optimization sequence for program `benchmarks/polybench/3mm`, execute the followoing:
 
 ```
-python3 main.py --bin-path (your llvm location) --driver (your llvm driver) --linker (your llvm linker) --src-dir (3mm location) --libs '-I (resource for 3mm)
+python3 runCompTuner.py --bin-path (your llvm location) --driver (your llvm driver) --linker (your llvm linker) --src-dir (3mm location) --libs '-I (resource for 3mm)
 ```
 

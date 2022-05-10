@@ -1,0 +1,38 @@
+Mean Results for prediction_err on 50 test samples on 2,20,40,60 training set. 
+====================================================
+GCC
+====================================================
+correlation:
+-——————————————Predictionerror-——————————————
+CompTuner:[0.11335, 0.05623, 0.02152, 0.01082]
+CompTuner_high:[0.11037, 0.08736, 0.06534, 0.03320]
+
+
+covariane:
+-——————————————Predictionerror-——————————————
+CompTuner:[0.12636, 0.07365, 0.02431, 0.01468]
+CompTuner_high:[0.09962, 0.06264, 0.03379, 0.01996]
+
+
+symm:
+-——————————————Predictionerror-——————————————
+CompTuner:[0.05772, 0.02623, 0.01104, 0.00301]
+CompTuner_high:[0.04268, 0.03421, 0.01679, 0.01096]
+
+
+automotive_bitcount:
+-——————————————Predictionerror-——————————————
+CompTuner:[0.09093, 0.05812, 0.03064, 0.01052]
+CompTuner_high:[0.08152, 0.05362, 0.02109, 0.01043]
+
+
+automotive_susan_e:
+-——————————————Predictionerror-——————————————
+CompTuner:[0.05075, 0.01738, 0.01052, 0.00326]
+CompTuner_high:[0.05643, 0.03569, 0.01676, 0.00168]
+
+
+automotive_susan_c:
+-——————————————Predictionerror-——————————————
+CompTuner:[0.10852, 0.06083, 0.03478, 0.01124]
+CompTuner_high:[0.10040, 0.05032, 0.02259, 0.00937]
