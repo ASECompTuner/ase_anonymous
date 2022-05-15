@@ -8,5 +8,5 @@ The folder `Result for ablation study`  contains the results for our **Ablation 
 
 -  `results_for_speedup.txt` presents $CompTuner's, CompTuner_{high}'s, CompTuner_{impact}'s$ speedup performance on P1, P2, P3, C1, C2, C3 of three experiments. We use the mean value of three experiments as the result of Table 5 in our paper.
 
--  `results_for_prediction_err.txt` presents $CompTuner's, CompTuner_{high}'s$ prediction error on P1, P2, P3, C1, C2, C3. We use the mean value of the 55 test samples' prediction error as the result of Figure 2 and Figure 3 in our paper.
+-  `results_for_prediction_err.txt` presents $CompTuner's, CompTuner_{high}'s$ prediction error on P1, P2, P3, C1, C2, C3. We use the mean value of the 50 test samples' prediction error as the result of Figure 2 and Figure 3 in our paper.
 
