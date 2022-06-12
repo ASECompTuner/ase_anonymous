@@ -243,8 +243,8 @@ class BOCA:
         else:
             # print('boca search')
             merged_predicted_objectives = self.boca_search(model, eta, rnum, steps)
-            if steps == 1 or steps % 20 == 0 or steps == 58:
-                self.get_acc(model,steps)
+            # if steps == 1 or steps % 20 == 0 or steps == 58:
+            #     self.get_acc(model,steps)
         merged_predicted_objectives = sorted(merged_predicted_objectives, key=lambda x: x[1], reverse=True)
         end = time.time()
         print('search time: ' + str(end-begin))

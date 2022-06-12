@@ -52,3 +52,6 @@ python3 runCompTuner.py --bin-path (your gcc location) --driver (your gcc driver
 python3 runCompTuner.py --bin-path (your llvm location) --driver (your llvm driver) --linker (your llvm linker) --src-dir (3mm location) --libs '-I (resource for 3mm)
 ```
 
+## Note
+
+Different versions of compilers use different compilation commands, so please pay attention to modify the relevant statements.
