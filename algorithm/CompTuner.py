@@ -444,7 +444,7 @@ class compTuner:
                     self.gbest = current_best_seq
                     self.fit = current_best
                     self.V = self.update_v(self.V, inital_indep, len(inital_indep), len(inital_indep[0]), self.pbest,
-                                           self.gbest, self.c1, self.c2, 10, -10)
+                                           self.gbest, self.w, self.c1, self.c2, 10, -10)
                     for i in range(len(inital_indep)):
                         for j in range(len(inital_indep[0])):
                             a = random.random()
@@ -481,7 +481,7 @@ class compTuner:
                     """
                     V_for_better = self.update_v(better_seed_V, better_seed_seq, len(better_seed_seq),
                                                  len(better_seed_seq[0]), better_seed_pbest, self.gbest
-                                                 , 2 * self.c1, self.c2, 10, -10)
+                                                 , self.w, 2 * self.c1, self.c2, 10, -10)
                     for i in range(len(better_seed_seq)):
                         for j in range(len(better_seed_seq[0])):
                             a = random.random()
@@ -494,7 +494,7 @@ class compTuner:
                     """
                     V_for_worse = self.update_v(worse_seed_V, worse_seed_seq, len(worse_seed_seq),
                                                 len(worse_seed_seq[0]), worse_seed_pbest, self.gbest
-                                                , self.c1, 2 * self.c2, 10, -10)
+                                                , self.w, self.c1, 2 * self.c2, 10, -10)
                     for i in range(len(worse_seed_seq)):
                         for j in range(len(worse_seed_seq[0])):
                             a = random.random()

@@ -52,8 +52,8 @@ if __name__ == '__main__':
 #
 #
     args = parser.parse_args()
-    if args.seed:
-        random.seed(args.seed)
+    if args.random:
+        random.seed(args.random)
     from algorithm.executor import Executor, LOG_DIR
 
     if not os.path.exists(LOG_DIR):
