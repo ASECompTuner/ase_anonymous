@@ -421,7 +421,7 @@ class compTuner:
         for t in range(self.iteration):
             if t == 0:
                 self.V = self.update_v(self.V, inital_indep, len(inital_indep), len(inital_indep[0]), self.pbest,
-                                       self.gbest, self.c1, self.c2, 10, -10)
+                                       self.gbest, self.w, self.c1, self.c2, 10, -10)
                 for i in range(len(inital_indep)):
                     for j in range(len(inital_indep[0])):
                         a = random.random()
@@ -440,7 +440,7 @@ class compTuner:
                 sort_merged_predicted_objectives = sorted(merged_predicted_objectives, key=lambda x: x[1], reverse=True)
                 current_best = sort_merged_predicted_objectives[0][1]
                 current_best_seq = sort_merged_predicted_objectives[0][0]
-                if current_best > self.gbest:
+                if current_best > self.fit:
                     self.gbest = current_best_seq
                     self.fit = current_best
                     self.V = self.update_v(self.V, inital_indep, len(inital_indep), len(inital_indep[0]), self.pbest,
@@ -513,5 +513,5 @@ class compTuner:
             ss = '{}: step {}, cur-best {}, cur-best-seq {}'.format(str(round(ts[-1])), str(t + 1),
                                                                              str(self.fit), str(self.gbest))
             write_log(ss, LOG_FILE)
-            if (time.time() - begin) > time_set_up:
-                break
+            # if (time.time() - begin) > time_set_up:
+            #     break
